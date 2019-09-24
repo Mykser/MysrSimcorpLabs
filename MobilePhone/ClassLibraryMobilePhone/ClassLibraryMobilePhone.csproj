@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7EC57A03-7F7B-4446-A4D7-DEE3F5381D46}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{5E1C4EE2-A424-4981-9565-F4A2FE21650E}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MobilePhone</RootNamespace>
-    <AssemblyName>MobilePhone</AssemblyName>
+    <RootNamespace>ClassLibraryMobilePhone</RootNamespace>
+    <AssemblyName>ClassLibraryMobilePhone</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +40,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleOutput.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Battery.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Charger\CarCharger.cs" />
+    <Compile Include="Charger\ChargeriPhone.cs" />
+    <Compile Include="Charger\IPhoneCharger.cs" />
+    <Compile Include="Charger\SamsungCharger.cs" />
+    <Compile Include="Charger\UnofficialCharger.cs" />
+    <Compile Include="IOutput.cs" />
+    <Compile Include="IVoiceListener.cs" />
+    <Compile Include="Keyboard.cs" />
+    <Compile Include="Microphone.cs" />
+    <Compile Include="Mobile.cs" />
+    <Compile Include="PhoneJack\iPhoneHeadset.cs" />
+    <Compile Include="PhoneJack\IPlayback.cs" />
+    <Compile Include="PhoneJack\PhoneSpeaker.cs" />
+    <Compile Include="PhoneJack\SamsungHeadset.cs" />
+    <Compile Include="PhoneJack\UnofficialiPhoneHeadset.cs" />
+    <Compile Include="Processor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibraryMobilePhone\ClassLibraryMobilePhone.csproj">
-      <Project>{5e1c4ee2-a424-4981-9565-f4a2fe21650e}</Project>
-      <Name>ClassLibraryMobilePhone</Name>
-    </ProjectReference>
+    <Compile Include="Screen\ColorfulScreen.cs" />
+    <Compile Include="Screen\IScreenImage.cs" />
+    <Compile Include="Screen\MonochromeScreen.cs" />
+    <Compile Include="Screen\OLEDScreen.cs" />
+    <Compile Include="Screen\RetinaScreen.cs" />
+    <Compile Include="Screen\ScreenBase.cs" />
+    <Compile Include="Screen\ScreenImage.cs" />
+    <Compile Include="SimCard.cs" />
+    <Compile Include="SimCorpMobile.cs" />
+    <Compile Include="Speaker.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
