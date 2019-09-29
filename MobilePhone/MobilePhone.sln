@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryMobilePhone", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryMobilePhoneTests", "ClassLibraryMobilePhoneTests\ClassLibraryMobilePhoneTests.csproj", "{7A81121C-AA2D-4699-995F-2ED1F8E51171}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageFormattingTests", "MessageFormattingTests\MessageFormattingTests.csproj", "{D9B8CCB1-DF17-4F9E-BA39-3116CEAB2B10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7A81121C-AA2D-4699-995F-2ED1F8E51171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A81121C-AA2D-4699-995F-2ED1F8E51171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A81121C-AA2D-4699-995F-2ED1F8E51171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9B8CCB1-DF17-4F9E-BA39-3116CEAB2B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9B8CCB1-DF17-4F9E-BA39-3116CEAB2B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9B8CCB1-DF17-4F9E-BA39-3116CEAB2B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9B8CCB1-DF17-4F9E-BA39-3116CEAB2B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

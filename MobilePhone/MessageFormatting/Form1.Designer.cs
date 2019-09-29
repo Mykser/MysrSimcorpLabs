@@ -36,6 +36,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "None",
@@ -48,7 +49,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(186, 21);
             this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "Select Formatting";
             // 
             // MessageRichTextBox
             // 
@@ -72,6 +72,7 @@
             this.ClientSize = new System.Drawing.Size(467, 436);
             this.Controls.Add(this.MessageRichTextBox);
             this.Controls.Add(this.comboBox1);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Message Formatting";
             this.ResumeLayout(false);

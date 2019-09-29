@@ -17,7 +17,7 @@ namespace MessageFormatting
         public Form1()
         {
             InitializeComponent();
-            
+            comboBox1.SelectedIndex = 0;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

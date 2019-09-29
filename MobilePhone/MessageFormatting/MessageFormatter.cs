@@ -8,10 +8,10 @@ namespace MessageFormatting
 
 {
     public delegate string FormatDelegate(string text);
-   static public   class MessageFormatter
+    static public class MessageFormatter
     {
 
-          public static string FormatWithTime(string message)
+        public static string FormatWithTime(string message)
         {
             return $"[{DateTime.Now}]{message + Environment.NewLine}";
         }
@@ -31,7 +31,7 @@ namespace MessageFormatting
         }
         public static string FormatCustom(string message)
         {
-            return "!!!"+message+ "!!!" + Environment.NewLine;
+            return "!!!" + message + "!!!" + Environment.NewLine;
         }
 
     }
